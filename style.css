@@ -7,7 +7,7 @@
 
 .inputGroup input {
   font-size: 100%;
-  padding: 0.8em;
+  padding: 1.1em;
   outline: none;
   border: 2px solid rgb(200, 200, 200);
   background-color: transparent;
@@ -18,9 +18,11 @@
 .inputGroup label {
   font-size: 100%;
   position: absolute;
-  left: 0;
+  left: -10%;
+  top: 20%;
+  right: 20%;
   padding: 0.8em;
-  margin-left: 0.5em;
+  margin-left: 0.8em;
   pointer-events: none;
   transition: all 0.3s ease;
   color: rgb(100, 100, 100);
@@ -31,7 +33,7 @@
   margin: 0em;
   margin-left: 1.3em;
   padding: 0.4em;
-  background-color: #e8e8e8;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .inputGroup :is(input:focus, input:valid) {
@@ -77,8 +79,16 @@ button {
   box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
 }
 
-.body{
-    background-color: #5d385e;
+body{
+    
+  background-color: #5d385e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center;
+  min-height: 50h;       
+  margin: 0px;               
+
 }
 h1{
     color: #572c58;
@@ -87,3 +97,13 @@ h1{
     background-color: rgb(213, 177, 235);    
 }
 
+p{
+  color: #f4f5f2;
+  font-size: 30px;
+}
+
+a{
+  color: rgb(161, 155, 142);
+  margin-bottom: 20px;
+
+}
